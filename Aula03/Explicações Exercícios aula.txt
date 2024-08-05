@@ -1,0 +1,36 @@
+1º exercício:
+A classe Main está sendo criada como estática e pública, e será o ponto de entrada de nosso programa. Após isso, iniciamos uma função do tipo void, também pública, que por ser deste tipo, não tem retorno.
+A linha seguinte chama o método println da biblioteca System. Out significa saída.
+
+
+2º exercício:
+Neste exercício, estamos criando uma classe chamada Pessoa, com o atributo nome do tipo String.
+Na classe Main, instanciamos a classe Pessoa na variável pessoa sem nenhum construtor definido, e atribuímos um valor para o atributo nome deste objeto (pessoa.nome = "João";).
+Para finalizar, exibimos o valor definido no atributo nome do objeto instanciado em "pessoa" por meio do System.out.println.
+
+3º exercício:
+O terceiro exercício é similar ao segundo exercício, com a diferença que na criação do objeto, o mesmo já está sendo instanciado com um nome definido por meio do construtor (Pessoa pessoa = new Pessoa("Maria");).
+
+4º exercício:
+Na classe Main, instanciamos o objeto Pessoa passando Carlos como parâmetro para o atributo nome, e abaixo chamamos o método dizerOla do objeto instanciado (pessoa).
+
+5º exercício:
+Neste exercício, estamos criando a classe Pessoa com alguns métodos adicionais, getNome e setNome (getter e setter para o atributo nome).
+Com o getter e setter definido, estamos dando entrada ao processo de encapsulamento, onde podemos tratar quando os dados devem ser editados e recuperados.
+Exemplo: Como não podemos definir o nome diretamente pela variável nome (pessoa.nome = "Fulano";), esta atribuição deve ser feita pelo setter do nome (setNome), e dentro desta função, podemos checar se o nome pode realmente ser definido ou se não existe algum bloqueio contra o nome que está tentando ser definido.
+Na classe Main, criamos um objeto Pessoa com o nome Santos, chamamos o método dizerOla, mudamos o nome para Sabrina através do setter e recuperamos o nome alterado pelo getter.
+
+6º exercício:
+Neste exercício, estamos usando o conceito de herança ao herdar na classe Estudante, os atributos e métodos da classe Pessoa.
+Adicionamos alguns métodos específicos para o Estudante (getter e setter para matricula e mostrarMatricula).
+
+7º exercício:
+Aqui, estamos usando o conceito de herança (herdando a classe Pessoa em Estudante), encapsulamento com os getters e setters e o polimorfismo, subscrevendo o método dizerOla do Professor no Estudante.
+
+8º exercício:
+Aqui, estamos usando o conceito de classes abstratas. Criamos a classe Animal (abstrata), e estamos herdando a mesma nas classes Cachorro e Gato, e usando o polimorfismo para subscrever o método abstrato fazerSom para emitir o som correto para cada Animal.
+
+Observações finais:
+Não entendi muito bem para que serve os métodos e classes abstratas.
+Gostaria de ver em outros exemplos o uso deste conceito da programação á objetos, pois não parece fazer muito sentido para mim.
+Entendi que criamos uma classe abstrata e subscrevemos este método nas classes onde estamos herdando a classe base, mas não consegui entender muito para que isso seria usado.
