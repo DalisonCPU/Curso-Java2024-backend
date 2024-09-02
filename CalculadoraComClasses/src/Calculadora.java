@@ -2,6 +2,11 @@ import java.util.Scanner;
 
 public class Calculadora {
     private int operacao;
+    Scanner teclado;
+
+    public Calculadora() {
+        teclado = new Scanner(System.in);
+    }
 
     public void defineOperacao(int operacao) {
         this.operacao = operacao;
@@ -14,7 +19,6 @@ public class Calculadora {
         }
 
         System.out.println("Digite o primeiro número:");
-        Scanner teclado = new Scanner(System.in);
         float a = teclado.nextFloat();
 
         if(operacao != 6) {
@@ -42,7 +46,6 @@ public class Calculadora {
             System.out.println(fatora(a));
         }
         operacao = -1;
-        teclado.close();
     }
 
     public float adicionarNumero(float a, float b) {
