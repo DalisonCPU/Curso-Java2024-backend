@@ -1,0 +1,4 @@
+curl -X POST http://localhost:8080/profissoes -H "Content-Type: application/json" -d "{\"nome\": \"Engenheiro\"}"
+
+
+curl -X POST http://localhost:8080/clientes -H "Content-Type: application/json" -d "{\"nome\": \"João\", \"cpf\":\"000.111.222-33\",\"data_nascimento\":\"1998-03-24\",\"id_profissao\":1}"
